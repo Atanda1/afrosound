@@ -1,0 +1,109 @@
+$orange : #D9592A;
+$off-white : #CDCBD6;
+$navy_blue: #0A0B36;
+$light-blue : #0061ff;
+$purple : #341F8F;
+$white: #ffff;
+$black : black;
+$black_shade: #040309;
+$font-colour: #383838;
+$thin-font: 200;
+$text-font-family: 'Avenir Light';
+$main-text-family:  'Druk Wide Bold', sans-serif;
+$text-font-colour: #6B7C93;
+$small-font: 1.1rem;
+
+@import url('https://db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide+Bold');
+@import url('https://db.onlinewebfonts.com/c/116af611cbcd9e4bada60b4e700430c1?family=Avenir+Light');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Poppins|Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Nunito:wght@200&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	//font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    // font-weight: bold;
+    color: $white;
+    box-sizing: border-box;
+ //   outline: 2px solid red;
+}
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    
+    @media screen and (max-width: 90em) {
+        font-size: 58%;
+    }
+    @media screen and (max-width: 55em) {
+        font-size: 55%;
+    }
+    @media screen and (max-width: 40em) {
+        font-size: 50%;
+    }
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+.ma{
+    &__md {
+        margin-left: 10%;
+    }
+    &__top {
+        margin-top: 4%;
+    }
+    &__btm {
+        margin-bottom: 6%;
+    }
+    &__sm {
+        margin-left: 2%;
+        &__top {
+            margin-top: 4%;
+        }
+    }
+}
+
+.info {
+    display: none;
+}

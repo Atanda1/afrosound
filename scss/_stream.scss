@@ -1,0 +1,104 @@
+%btnstream {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:white;
+    
+    white-space: nowrap;
+    list-style-type: none;
+    padding: 1.2rem 2rem;
+    margin-left: .3rem
+}
+
+.stream {
+    color:  $black_shade;
+    &__outerbox {
+        grid-column: col-start/col-end;
+    }
+    &__word__details {
+        grid-column: col-start 1;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 2.5rem;
+    }
+    &__details {
+        display: flex;
+        &__name {
+            font-weight: 800;
+            font-size: 1.8rem;
+        }
+        &__address {
+            font-weight: 400;
+            font-size: 1.8rem;
+            margin-left: .3%;
+        }
+    }
+    &__button {
+        margin-left: auto;
+        display: flex;
+        &__view {
+            display: flex;
+            @extend %btnstream;
+            background-color: $black_shade;
+            place-items: center;
+            //margin-right: 7%;
+            img {
+                margin-right: 9%;
+            }
+        }
+        &__live {
+            @extend %btnstream; 
+            background-color: $orange;
+        }
+    }
+    &__box {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 3%;
+        height: 100%;
+        &__yt {
+            height: inherit;
+            iframe {
+                width: 100%;
+               height: inherit;
+            }
+        }
+        &__comment {
+            background-color: $white;
+            color: $black_shade;
+            padding: 4%;
+            font-size: 1.6rem;
+            font-weight: 800;
+            display: grid;
+            grid-template-rows: 2fr 10fr 1fr;
+            &__individuals {
+                h3 {
+                  color: $black_shade;  
+                }
+                
+            }
+            &__details {
+                color: $black_shade;         
+            hr {
+                color: 0.5px solid rgba(4, 3, 9, 0.15);
+            }
+            }
+            
+            &__input {
+                color: $black_shade;
+                display: flex;  
+                input {
+                    color: $black_shade;  
+                    width: 90%; 
+                }  
+                button {
+                    background-color: white;
+                }      
+            }
+        }
+    }
+}

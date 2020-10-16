@@ -1,0 +1,85 @@
+.navStyle {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: .5rem;
+    padding: .5rem .9rem ;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  %btn {
+    @extend .navStyle;
+      color:white;
+      background: $orange;
+      list-style-type: none;
+  }
+  
+  .ham {margin-top: -1.3rem;}
+  .Navbar {
+      grid-column: col-start/ col-end;
+      margin: .9rem .5rem auto .5rem;
+      position: sticky;
+      display: flex;
+      padding: 18px;
+      font-family: sans-serif;
+     // color: $grey;
+      flex-direction: row;
+        &__Link {
+          margin-right: .5rem;
+          display: grid;
+          place-self: center;
+          width: max-content;
+          //white-space: nowrap;
+          //display: flex;
+          &__img {
+            margin-right: 0rem;
+            display: grid;
+            place-self: center;
+          }
+            img {
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                border-radius: .5rem;
+                padding: .5rem .9rem ;
+                
+                list-style-type: none;
+                margin-left: .3rem;
+                font-size: 1.1rem;
+            }
+            &__signUpbtn {
+              @extend .navStyle;
+              color:white;
+              list-style-type: none;
+              margin-left: .3rem
+            }
+            &__signUpbtn {
+               @extend .navStyle;
+                color:white;
+                background-color: $orange;
+                white-space: nowrap;
+                list-style-type: none;
+               padding: 2rem 3.5rem;
+                margin-left: .3rem
+              }
+            
+            a {
+             @extend .navStyle;
+            // padding: 15% 0;
+            }
+        }
+        &__Items {
+            display: flex;
+            margin-left:auto;
+          }
+        &__Items--right {
+        margin-left:auto;
+        }
+        &__Link-toggle {
+           // display: none;
+           font-size: 1.8rem;
+           display: flex;
+          }
+    }

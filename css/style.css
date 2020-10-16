@@ -1,0 +1,506 @@
+@import url("https://db.onlinewebfonts.com/c/2206d6cc490084998d531e8c1b2cbb4a?family=Druk+Wide+Bold");
+@import url("https://db.onlinewebfonts.com/c/116af611cbcd9e4bada60b4e700430c1?family=Avenir+Light");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins|Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Nunito:wght@200&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  display: block;
+  font-family: "Poppins", sans-serif;
+  color: #ffff;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media screen and (max-width: 90em) {
+  html {
+    font-size: 58%;
+  }
+}
+@media screen and (max-width: 55em) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+.ma__md {
+  margin-left: 10%;
+}
+.ma__top {
+  margin-top: 4%;
+}
+.ma__btm {
+  margin-bottom: 6%;
+}
+.ma__sm {
+  margin-left: 2%;
+}
+.ma__sm__top {
+  margin-top: 4%;
+}
+
+.info {
+  display: none;
+}
+
+.stream__button__live, .stream__button__view {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+  white-space: nowrap;
+  list-style-type: none;
+  padding: 1.2rem 2rem;
+  margin-left: 0.3rem;
+}
+
+.stream {
+  color: #040309;
+}
+.stream__outerbox {
+  grid-column: col-start/col-end;
+}
+.stream__word__details {
+  grid-column: col-start 1;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+}
+.stream__details {
+  display: flex;
+}
+.stream__details__name {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+.stream__details__address {
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-left: 0.3%;
+}
+.stream__button {
+  margin-left: auto;
+  display: flex;
+}
+.stream__button__view {
+  display: flex;
+  background-color: #040309;
+  place-items: center;
+}
+.stream__button__view img {
+  margin-right: 9%;
+}
+.stream__button__live {
+  background-color: #D9592A;
+}
+.stream__box {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 3%;
+  height: 100%;
+}
+.stream__box__yt {
+  height: inherit;
+}
+.stream__box__yt iframe {
+  width: 100%;
+  height: inherit;
+}
+.stream__box__comment {
+  background-color: #ffff;
+  color: #040309;
+  padding: 4%;
+  font-size: 1.6rem;
+  font-weight: 800;
+  display: grid;
+  grid-template-rows: 2fr 10fr 1fr;
+}
+.stream__box__comment__individuals h3 {
+  color: #040309;
+}
+.stream__box__comment__details {
+  color: #040309;
+}
+.stream__box__comment__details hr {
+  color: 0.5px solid rgba(4, 3, 9, 0.15);
+}
+.stream__box__comment__input {
+  color: #040309;
+  display: flex;
+}
+.stream__box__comment__input input {
+  color: #040309;
+  width: 90%;
+}
+.stream__box__comment__input button {
+  background-color: white;
+}
+
+.scrolling__footer {
+  opacity: 0.4;
+  grid-column: full-start/full-end;
+  display: grid;
+  grid-template-columns: [full-start] minmax(1rem, auto) [col-start] repeat(2, [inner-col-start] minmax(min-content, 45vw) [inner-col-end]) [col-end] minmax(1rem, auto) [full-end];
+}
+.scrolling__footer__individual {
+  grid-column: full-start/full-end;
+  font-family: "Druk Wide Bold", sans-serif;
+}
+.scrolling__footer__individual__h1 {
+  font-size: 4rem;
+  font-family: "Druk Wide Bold", sans-serif;
+}
+
+.footer {
+  grid-column: col-start/col-end;
+  display: flex;
+  align-items: flex-end;
+  background-repeat: repeat;
+  color: #ffff !important;
+}
+.footer__shell {
+  display: grid;
+  grid-column: full-start/full-end;
+  grid-template-columns: [full-start] minmax(1rem, auto) [col-start] repeat(2, [inner-col-start] minmax(min-content, 45vw) [inner-col-end]) [col-end] minmax(1rem, auto) [full-end];
+  background-image: url("/img/afrrosound.svg");
+  background-repeat: repeat;
+  background-position: bottom;
+  margin-top: 10rem;
+}
+.footer h3 {
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  font-family: "Avenir Light";
+  margin-bottom: 3.5%;
+}
+.footer h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Avenir Light";
+  margin-left: auto;
+  margin-bottom: 3.5%;
+}
+
+.banner__word__input button, .banner__word__input input {
+  height: 5rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1.3%;
+}
+
+.banner__image__innerdiv__location span, .banner__image__innerdiv__name span {
+  font-weight: 800;
+  margin-left: 3%;
+  white-space: nowrap;
+  font-size: 1.8rem;
+}
+
+.banner__word {
+  grid-column: col-start 1;
+  align-self: center;
+  display: grid;
+  padding: 7%;
+  padding-left: 1%;
+}
+.banner__word__lg {
+  font-family: "Druk Wide Bold", sans-serif;
+  font-size: 4rem;
+  line-height: 7.2rem;
+}
+.banner__word__sm {
+  margin-top: 2%;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-family: "Avenir Light";
+}
+.banner__word__input {
+  margin-top: 5%;
+  display: flex;
+  font-size: 1.6rem;
+  font-family: "Avenir Light";
+}
+.banner__word__input input {
+  width: 70%;
+  background-color: #CDCBD6;
+}
+.banner__word__input button {
+  width: 30%;
+  color: #ffff;
+  background-color: #D9592A;
+  margin-left: 0.6%;
+}
+.banner__image {
+  grid-column: inner-col-start 2/full-end;
+  background: linear-gradient(rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.84)), url("../img/burna_boy.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  place-content: center;
+  display: grid;
+}
+.banner__image__inner {
+  background: rgba(196, 196, 196, 0.05);
+  padding: 2%;
+  border-radius: 0.4rem;
+}
+.banner__image__innerdiv {
+  border-radius: 0.4rem;
+  width: 32rem;
+  background: rgba(196, 196, 196, 0.05);
+  color: #ffff;
+  padding: 5% 6% 5% 6%;
+  font-size: 1.5rem;
+  height: 9rem;
+  font-family: "Avenir Light";
+}
+.banner__image__innerdiv__name {
+  display: flex;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.8rem;
+}
+.banner__image__innerdiv__location {
+  font-size: 1.8rem;
+  display: flex;
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.6);
+}
+.banner__image button {
+  background-color: #341F8F;
+  width: 33%;
+  margin: 0 auto;
+  height: 4rem;
+  font-size: 1.6rem;
+  padding: 1%;
+  border-radius: 0.5rem;
+}
+
+.navStyle, .Navbar__Link a, .Navbar__Link__signUpbtn {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.ham {
+  margin-top: -1.3rem;
+}
+
+.Navbar {
+  grid-column: col-start/col-end;
+  margin: 0.9rem 0.5rem auto 0.5rem;
+  position: sticky;
+  display: flex;
+  padding: 18px;
+  font-family: sans-serif;
+  flex-direction: row;
+}
+.Navbar__Link {
+  margin-right: 0.5rem;
+  display: grid;
+  place-self: center;
+  width: max-content;
+}
+.Navbar__Link__img {
+  margin-right: 0rem;
+  display: grid;
+  place-self: center;
+}
+.Navbar__Link img {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  list-style-type: none;
+  margin-left: 0.3rem;
+  font-size: 1.1rem;
+}
+.Navbar__Link__signUpbtn {
+  color: white;
+  list-style-type: none;
+  margin-left: 0.3rem;
+}
+.Navbar__Link__signUpbtn {
+  color: white;
+  background-color: #D9592A;
+  white-space: nowrap;
+  list-style-type: none;
+  padding: 2rem 3.5rem;
+  margin-left: 0.3rem;
+}
+.Navbar__Items {
+  display: flex;
+  margin-left: auto;
+}
+.Navbar__Items--right {
+  margin-left: auto;
+}
+.Navbar__Link-toggle {
+  font-size: 1.8rem;
+  display: flex;
+}
+
+.container {
+  display: grid;
+  background-color: #0A0B36;
+  grid-template-rows: minmax(min-content, 13vh) minmax(min-content, 60vh) minmax(min-content, 27vh);
+  grid-template-columns: [full-start] minmax(1rem, auto) [col-start] repeat(2, [inner-col-start] minmax(min-content, 45vw) [inner-col-end]) [col-end] minmax(1rem, auto) [full-end];
+}
+
+.container-2 {
+  display: grid;
+  background-color: #0A0B36;
+  grid-template-rows: minmax(min-content, 10vh) minmax(min-content, 70vh) minmax(min-content, 20vh);
+  grid-template-columns: [full-start] minmax(1rem, auto) [col-start] repeat(2, [inner-col-start] minmax(min-content, 45vw) [inner-col-end]) [col-end] minmax(1rem, auto) [full-end];
+}
+
+@media only screen and (max-width: 750px) {
+  .container, .container-2 {
+    display: none;
+  }
+
+  .info {
+    display: grid;
+    place-items: center;
+    font-size: 4rem;
+    font-family: "Druk Wide Bold", sans-serif;
+  }
+
+  body {
+    background-color: #0A0B36;
+  }
+}
+.ready {
+  grid-column: col-start/col-end;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+}
+.ready__togo {
+  font-size: 2.4rem;
+}
+.ready h4 {
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+.ticket {
+  display: grid;
+  grid-template-rows: 1fr 4fr 5fr;
+  grid-gap: 1%;
+}
+.ticket__image {
+  width: 100%;
+  background-image: url("../img/burna_boy.png");
+  background-size: cover;
+}
+.ticket__image img {
+  max-width: 100%;
+}
+.ticket__details {
+  background-color: #ffff;
+  padding: 10% 20% 10% 15%;
+}
+.ticket__details h3 {
+  color: #040309;
+  font-size: 2rem;
+  font-weight: 800;
+}
+.ticket__location {
+  display: flex;
+}
+.ticket__location h4 {
+  color: #040309;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.ticket__time {
+  display: flex;
+}
+.ticket__time h4 {
+  color: #040309;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.ticket__time__date {
+  border-right: 2px solid #3333;
+}
+.ticket h4 {
+  color: #040309;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.ticket h3 {
+  color: #040309;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+/*# sourceMappingURL=style.css.map */

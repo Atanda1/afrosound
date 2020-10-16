@@ -1,0 +1,14 @@
+.ready {
+    grid-column: col-start/col-end;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    &__togo {
+        font-size: 2.4rem;
+    }
+    h4 {
+        line-height: 2.5rem;
+        font-size: 1.4rem;
+        font-weight: 100;
+    }
+}

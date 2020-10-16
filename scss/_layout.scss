@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    background-color: $navy_blue;
+    grid-template-rows: minmax(min-content,13vh) minmax(min-content,60vh) minmax(min-content,27vh);
+    grid-template-columns: [full-start] minmax(1rem, auto) [col-start] repeat(2, [inner-col-start] minmax(min-content, 45vw) [inner-col-end]) [col-end] minmax(1rem, auto) [full-end];
+}
+
+.container-2 {
+    display: grid;
+    background-color: $navy_blue;
+    grid-template-rows: minmax(min-content,10vh) minmax(min-content,70vh) minmax(min-content,20vh);
+    grid-template-columns: [full-start] minmax(1rem, auto) [col-start] repeat(2, [inner-col-start] minmax(min-content, 45vw) [inner-col-end]) [col-end] minmax(1rem, auto) [full-end];
+}
+
+
+@media only screen and (max-width: 750px) {
+    .container, .container-2 {
+        display: none;
+    }
+    .info {
+        display: grid;
+        place-items: center;
+        font-size: 4rem;
+        font-family: 'Druk Wide Bold', sans-serif;    
+    }
+    body {
+        background-color: $navy_blue;
+    }
+}

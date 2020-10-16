@@ -1,0 +1,53 @@
+.ticket {
+    display: grid;
+    grid-template-rows: 1fr 4fr 5fr;
+    grid-gap: 1%;
+    &__image {
+        width: 100%;
+        background-image: url('../img/burna_boy.png');
+        background-size: cover;
+        img {
+            max-width: 100%;
+        }
+    }
+    &__details {
+        
+        background-color: $white;
+        padding: 10% 20% 10% 15%;
+        h3 {
+            color: $black_shade; 
+            font-size: 2rem;
+            font-weight: 800;
+        }
+    }
+    &__location {
+        display: flex;
+        
+        h4 {
+          color: $black_shade; 
+          font-size: 1.5rem;
+          font-weight: 500;  
+        }
+    }
+    &__time {
+        display: flex;
+        h4 {
+            color: $black_shade; 
+            font-size: 1.5rem;
+            font-weight: 500;  
+        }
+        &__date {
+            border-right: 2px solid #3333;
+        }
+    }
+    h4{
+        color: $black_shade; 
+        font-size: 1.5rem;
+        font-weight: 500;  
+    }
+    h3 {
+        color: $black_shade; 
+        font-size: 2rem;
+        font-weight: 800;
+    }
+}
