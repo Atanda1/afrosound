@@ -231,13 +231,11 @@ q:before, q:after {
   padding-right: 2rem;
   font-size: 1.2rem;
   font-weight: 800;
-  font-family: "Avenir Light";
   margin-bottom: 3.5%;
 }
 .footer h4 {
   font-size: 1.2rem;
   font-weight: 500;
-  font-family: "Avenir Light";
   margin-left: auto;
   margin-bottom: 3.5%;
 }
@@ -264,7 +262,7 @@ q:before, q:after {
   padding-left: 1%;
 }
 .banner__word__lg {
-  font-family: "Druk Wide Bold", sans-serif;
+  font-family: "Krona One", sans-serif;
   font-size: 4rem;
   line-height: 7.2rem;
 }
@@ -272,7 +270,6 @@ q:before, q:after {
   margin-top: 2%;
   font-size: 1.8rem;
   line-height: 3rem;
-  font-family: "Avenir Light";
 }
 .banner__word__input {
   margin-top: 5%;
