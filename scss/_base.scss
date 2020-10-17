@@ -21,23 +21,24 @@ $small-font: 1.1rem;
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Nunito:wght@200&display=swap');
 
 
-@font-face {
-    font-family: 'bw_modelicamedium';
-    src: url('https://github.com/Atanda1/afrosound/blob/master/bwmodelica-medium-webfont.woff2') format('woff2'),
-         url('https://github.com/Atanda1/afrosound/blob/master/bwmodelica-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+// @font-face {
+//     font-family: 'ts_blockbold';
+//     src: url('https://github.com/Atanda1/afrosound/blob/master/ts_block_bold-webfont.woff2') format('woff2'),
+//          url('https://github.com/Atanda1/afrosound/blob/master/ts_block_bold-webfont.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+// }
 
-}
 
 @font-face {
     font-family: 'ts_blockbold';
-    src: url('ts_block_bold-webfont.woff2') format('woff2'),
-         url('ts_block_bold-webfont.woff') format('woff');
+    src: url('../ts_block_bold-webfont.woff2') format('woff2'),
+         url('../ts_block_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
