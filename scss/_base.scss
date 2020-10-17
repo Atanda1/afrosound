@@ -21,14 +21,14 @@ $small-font: 1.1rem;
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Nunito:wght@200&display=swap');
 
 
-@font-face {font-family: "Druk Wide Bold";
-    src: url("https://github.com/Atanda1/afrosound/blob/master/2206d6cc490084998d531e8c1b2cbb4a.eot"); /* IE9*/
-    src: url("https://github.com/Atanda1/afrosound/blob/master/2206d6cc490084998d531e8c1b2cbb4a.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("https://github.com/Atanda1/afrosound/blob/master/2206d6cc490084998d531e8c1b2cbb4a.woff2") format("woff2"), /* chrome、firefox */
-    url("https://github.com/Atanda1/afrosound/blob/master/2206d6cc490084998d531e8c1b2cbb4a.woff") format("woff"), /* chrome、firefox */
-    url("https://github.com/Atanda1/afrosound/blob/master/2206d6cc490084998d531e8c1b2cbb4a.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url("https://github.com/Atanda1/afrosound/blob/master/2206d6cc490084998d531e8c1b2cbb4a.svg#Druk Wide Bold") format("svg"); /* iOS 4.1- */
-  }
+@font-face {
+    font-family: 'bw_modelicamedium';
+    src: url('https://github.com/Atanda1/afrosound/blob/master/bwmodelica-medium-webfont.woff2') format('woff2'),
+         url('https://github.com/Atanda1/afrosound/blob/master/bwmodelica-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
