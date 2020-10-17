@@ -3,9 +3,9 @@
 
 
 @font-face {
-    font-family: 'bw_modelicamedium';
-    src: url('bwmodelica-medium-webfont.woff2') format('woff2'),
-         url('bwmodelica-medium-webfont.woff') format('woff');
+    font-family: 'ts_blockbold';
+    src: url('ts_block_bold-webfont.woff2') format('woff2'),
+         url('ts_block_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
