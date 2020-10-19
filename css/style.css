@@ -268,12 +268,13 @@ q:before, q:after {
 .banner__word__lg {
   font-family: "ts_blockbold", sans-serif;
   font-size: 4rem;
-  line-height: 7.2rem;
+  line-height: 6.2rem;
 }
 .banner__word__sm {
   margin-top: 2%;
   font-size: 1.8rem;
   line-height: 3rem;
+  letter-spacing: 2%;
 }
 .banner__word__input {
   margin-top: 5%;
@@ -467,7 +468,8 @@ q:before, q:after {
 }
 .ticket__details {
   background-color: #ffff;
-  padding: 10% 20% 10% 15%;
+  padding: 10% 10%;
+  padding-left: 25%;
 }
 .ticket__details h3 {
   color: #040309;
